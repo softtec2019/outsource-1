@@ -1,0 +1,516 @@
+/**
+*
+* ---------------------------------------------------------------------------
+*  
+* Template Name: GYM FITNESS | One Page Responsive HTML5 Gym Template
+* Template URL:	http://lovesome.biz/gym/ 
+* Author : Urosdltd
+* Version : 1.0  
+*
+* --------------------------------------------------------------------------- 
+*
+*/
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .about-title h2 {
+        margin-left: 10px;
+        font-size: 24px;
+    }
+    .single-progress-dec h3 {
+        font-size: 16px;
+    }
+    .price-info h4 {
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    #scrollUp {
+        bottom: 55px;
+    }
+    .recent-area {
+        height: 60px;
+        width: 60px;
+    }
+    .sub input {
+        width: 70%;
+    }
+}
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------   */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 13px;
+    }
+    /* Menu area */
+    .navbar-header {
+        float: none !important;
+    }
+    nav.navbar {
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 5px;
+        width: 100%;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border: 0;
+        box-shadow: inset 0 1px 0 #FB5B21;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    ul.navbar-nav {
+        border: 0 none;
+        text-align: left;
+        width: 100%;
+        background-color: #1a1a1a;
+    }
+    .navbar-nav li {
+        display: block !important;
+        float: none;
+        padding: 0 !important;
+    }
+    ul.navbar-nav li a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 20px !important;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover {
+        background-color: #FB5B21 !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-nav > li > a:hover {
+        background-color: #FB5B21 !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-nav > li > a:focus {
+        background-color: #1a1a1a !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-toggle {
+        background-color: #FB5B21;
+        border-color: #FB5B21;
+        margin: 0;
+        margin-bottom: 21px;
+    }
+    .navbar-default .navbar-toggle:focus {
+        background-color: #FB5B21;
+    }
+    .navbar-default .navbar-toggle:hover {
+        background-color: #FB5B21;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .navbar-brand {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: none;
+    }
+    .slider-table-cell h2 {
+        font-size: 35px;
+    }
+    .slider-table-cell h3 {
+        font-size: 20px;
+    }
+    .gym-title h2 {
+        font-size: 30px;
+    }
+    .about {
+        margin-bottom: 30px;
+    }
+    .about-title i.fa {
+        font-size: 26px;
+    }
+    .about-title h2 {
+        font-size: 20px;
+    }
+    .sign-up-area {
+        position: relative;
+    }
+    .sign-up-area::before {
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        color: #fff;
+    }
+    .sign-up-area .gym-title h2,
+    .sign-up-left > p {
+        color: #fff;
+    }
+    .gym-title h2 b {
+        color: #FB5B21;
+        letter-spacing: 28px;
+    }
+    .single-project {
+        width: 33.33%;
+    }
+    .iso-nav li {
+        padding: 5px 15px;
+    }
+    .single-progress-dec {
+        margin-bottom: 30px;
+    }
+    .single-video h2 {
+        font-size: 30px;
+    }
+    .count-progress > span {
+        font-size: 22px;
+    }
+    .single-progress-dec h3 {
+        font-size: 16px;
+    }
+    .price-table {
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .price-info {
+        font-size: 22px;
+    }
+    .price-info h4 {
+        font-size: 26px;
+    }
+    .newsletter-form h2 {
+        font-size: 26px;
+    }
+    .single-client p {
+        width: 80%;
+    }
+    #scrollUp {
+        bottom: 55px;
+    }
+    .contact {
+        border: 0;
+    }
+    .contact i.fa {
+        font-size: 26px;
+    }
+    .contact a,
+    .contact p {
+        font-size: 13px;
+    }
+    .footer-heading {
+        margin-bottom: 30px;
+    }
+    .recent-area {
+        width: 105px;
+    }
+    .sub input {
+        width: 80%;
+    }
+    .reserve-area {
+        font-size: 12px;
+    }
+
+
+}
+
+
+/*		Mobile Layout: 320px.
+------------------------------------------------------------   */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 13px;
+    }
+    /* Menu area */
+    .navbar-header {
+        float: none !important;
+    }
+    nav.navbar {
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        width: 100%;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border: 0;
+        box-shadow: inset 0 1px 0 #FB5B21;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    ul.navbar-nav {
+        border: 0 none;
+        text-align: left;
+        width: 100%;
+        background-color: #1a1a1a;
+    }
+    .navbar-nav li {
+        display: block !important;
+        float: none;
+        padding: 0 !important;
+    }
+    ul.navbar-nav li a {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        padding-left: 20px !important;
+    }
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:focus,
+    .navbar-default .navbar-nav > .active > a:hover {
+        background-color: #FB5B21 !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-nav > li > a:hover {
+        background-color: #FB5B21 !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-nav > li > a:focus {
+        background-color: #1a1a1a !important;
+        color: #fff !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-toggle {
+        background-color: #FB5B21;
+        border-color: #FB5B21;
+        margin: -3px 12px 12px 0;
+    }
+    .navbar-default .navbar-toggle:focus {
+        background-color: #FB5B21;
+    }
+    .navbar-default .navbar-toggle:hover {
+        background-color: #FB5B21;
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+    .navbar-brand {
+        padding: 11px 15px;
+    }
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: none;
+    }
+    .smooth-scroll {
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .single-slider {
+        height: 500px;
+    }
+    .slider-table-cell h2 {
+        font-size: 20px;
+    }
+    .slider-table-cell h3 {
+        font-size: 16px;
+    }
+    .slider-content .owl-dot {
+        margin-right: 5px;
+        display: inline-block;
+    }
+    .slider-content .owl-dots {
+        top: unset;
+        transform: translate(0);
+        position: absolute;
+        right: 0;
+        width: 100%;
+        bottom: 5%;
+    }
+    .gym-btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .gym-title h2 {
+        font-size: 22px;
+    }
+    .about-title h2 {
+        font-size: 18px;
+    }
+    .about-title i.fa {
+        font-size: 25px;
+    }
+    .gym-title h2 b {
+        color: #FB5B21;
+        letter-spacing: 19px;
+    }
+    .sign-up-area {
+        position: relative;
+    }
+    .sign-up-area::before {
+        background-color: rgba(0, 0, 0, 0.8);
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        content: "";
+        color: #fff;
+    }
+    .sign-up-area .gym-title h2,
+    .sign-up-left > p {
+        color: #fff;
+    }
+    .about {
+        margin-bottom: 30px;
+    }
+    .video-btn {
+        height: 50px;
+        width: 50px;
+    }
+    a.video-btn i.fa {
+        font-size: 26px;
+    }
+    .single-video h2 {
+        font-size: 22px;
+    }
+    .class-info > h2 {
+        padding: 10px;
+        font-size: 18px;
+    }
+    .list-one {
+        font-size: 13px;
+    }
+    .iso-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    .iso-nav ul li {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .single-project {
+        width: 100%;
+    }
+    .single-progress-dec {
+        margin-bottom: 50px;
+    }
+    .price-table {
+        margin-bottom: 50px;
+    }
+    .price-info {
+        font-size: 14px;
+    }
+    .price-info h4 {
+        font-size: 16px;
+    }
+    .newsletter-form h2 {
+        font-size: 20px;
+    }
+    .formnewsletter button {
+        width: 108px;
+        font-size: 12px;
+    }
+    .formnewsletter button.hvr-shutter-out-horizontal::before {
+        border-radius: 0;
+    }
+    .single-client img {
+        width: 30% !important;
+    }
+    .single-client p {
+        width: auto;
+    }
+    .client-wraper .owl-dots {
+        width: 100%;
+    }
+    .sent-button {
+        font-size: 14px;
+        padding: 5px 15px;
+    }
+    .contact {
+        border: 0;
+        margin-bottom: 30px;
+    }
+    .reserve-area {
+        text-align: center;
+    }
+    .text-right {
+        text-align: center;
+    }
+    .contact a {
+        font-size: 14px;
+    }
+    .contact i.fa {
+        font-size: 26px;
+    }
+    .count-progress > span {
+        font-size: 20px;
+    }
+    .single-progress-dec h3 {
+        font-size: 15px;
+    }
+    .formnewsletter {
+        width: auto;
+    }
+    .formnewsletter input.form-control {
+        width: 95%;
+        font-size: 12px;
+    }
+    .single-client h3 {
+        font-size: 14px;
+    }
+    #map {
+        width: 100%;
+        height: 300px;
+    }
+    #street {
+        display: none;
+    }
+    .footer-heading h2 {
+        margin-bottom: 20px;
+    }
+    .footer-heading {
+        margin-top: 50px;
+    }
+    .recent-area {
+        width: 86px;
+    }
+    .social-link {
+        padding: 0 0 16px;
+    }
+    .sub input {
+        width: 80%;
+    }
+}
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------  */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .logo img {
+        width: 150px;
+    }
+    #scrollUp {
+        bottom: 90px;
+    }
+}

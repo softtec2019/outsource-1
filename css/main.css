@@ -1,0 +1,1499 @@
+/**
+*
+* ---------------------------------------------------------------------------
+*  
+* Template Name: GYM FITNESS | One Page Responsive HTML5 Gym Template
+* Template URL:	http://lovesome.biz/gym/
+* Author : Urosdltd
+* Version : 1.0
+*
+* --------------------------------------------------------------------------- 
+*
+*/
+
+/*  ================================== 
+*   Table of Contents
+*    ==================================
+*	1. Global Area
+*	2. Header Area
+*	3. Slider Area
+*	4. About Area
+*	5. Class Area
+*	6. Schedule Area
+*	7. Team Area
+*	8. Video Area
+*	9. Gallery Area
+*	10. Progress Area
+*	11. Price Area
+*	12. Newsletter Area
+*	13. Client Area
+*	14. Contact Area
+*	15. Map Area
+*	16. Contact Info Area
+*	17. Footer Area
+*	================================== */
+
+/*  ================================
+        01. Global area
+    ================================ */
+
+body {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 1px;
+    font-family: 'Open Sans', sans-serif;
+    color: #777;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #474747;
+    line-height: 1.2;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #666;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+img {
+    max-width: 100%;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: inherit;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/*- template button part start -*/
+
+.gym-btn {
+    background-color: #FB5B21;
+    border: 1px solid #FB5B21;
+    color: #fff;
+    display: inline-block;
+    font-weight: 600;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-top: 30px;
+}
+
+.gym-btn:hover {
+    color: #fff;
+}
+
+.join-button {
+    padding: 10px 0;
+}
+
+.none-border {
+    border: 0 !important;
+}
+
+.hvr-shutter-out-horizontal::before {
+    background: #1a1a1a none repeat scroll 0 0;
+    border-radius: 3px;
+}
+
+/*- template button part end -*/
+
+/*- title part start -*/
+
+.gym-title h2 {
+    color: #1a1a1a;
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.gym-title h2 span {
+    color: #FB5B21;
+}
+
+.gym-title h2 b {
+    color: #777;
+    letter-spacing: 35px;
+}
+
+.gym-title p {
+    padding: 40px 0 45px;
+    margin: 0;
+}
+
+.title-left {
+    margin-bottom: 45px;
+}
+
+/*- title part end -*/
+
+/*- Scrollup part start -*/
+
+#scrollUp {
+    background: #FB5B21 none repeat scroll 0 0;
+    border-radius: 3px;
+    bottom: 40px;
+    font-size: 20px;
+    padding: 5px 0;
+    right: 20px;
+    z-index: 999 !important;
+}
+
+.hvr-icon-bob::before {
+    animation-delay: 0s, 0.3s;
+    animation-direction: normal, alternate;
+    animation-duration: 0.3s, 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1, infinite;
+    animation-name: hvr-icon-bob-float, hvr-icon-bob;
+    animation-timing-function: ease-out, ease-in-out;
+    color: #fff;
+    content: "";
+    font-family: fontawesome;
+    font-size: 22px;
+    right: 10px;
+    top: -18px;
+}
+
+/*- Scrollup part end -*/
+
+/*- preloader part start -*/
+
+.preloader-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+.spinner {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner > div {
+    background-color: #FB5B21;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
+
+/*- preloader part end -*/
+
+/*  ================================
+       2. Header Area
+    ================================ */
+
+.header-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.fixed-menu {
+    background-color: #1a1a1a;
+    position: fixed;
+    -webkit-animation-name: stickyslide;
+    animation-name: stickyslide;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    padding: 10px 0;
+}
+
+@-webkit-keyframes stickyslide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-120px);
+        -moz-transform: translateY(-120px);
+        -ms-transform: translateY(-120px);
+        -o-transform: translateY(-120px);
+        transform: translateY(-120px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes stickyslide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-120px);
+        -moz-transform: translateY(-120px);
+        -ms-transform: translateY(-120px);
+        -o-transform: translateY(-120px);
+        transform: translateY(-120px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.logo {}
+
+/*- menu part start -*/
+
+.menu-part {
+    display: inline-block;
+    text-align: center;
+    width: 90%;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+
+ul.navbar-nav {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    float: none;
+}
+
+ul.navbar-nav li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 13px 10px;
+}
+
+ul.navbar-nav li a {
+    border: 0 none !important;
+    color: #fff !important;
+    font-weight: 700;
+    padding: 0 !important;
+    text-transform: uppercase;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+}
+
+ul.navbar-nav a:hover {
+    color: #FB5B21;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent !important;
+    color: #FB5B21 !important;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FB5B21 !important;
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #fff !important;
+    background-color: transparent !important;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: 0 none;
+    margin: 0;
+}
+
+#bs-example-navbar-collapse-1 {
+    text-align: right;
+}
+
+
+/*- menu part end -*/
+
+/*  ================================
+        3. Slider Area
+    ================================ */
+
+.slider-area {
+    background-color: #1a1a1a;
+}
+
+.single-slider {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: table;
+}
+
+.single-slider::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.slider-table-cell {
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.slider-bg-01 {
+    background: rgba(0, 0, 0, 0) url("../img/slider/01.jpg") no-repeat scroll center top / cover;
+}
+
+.slider-bg-02 {
+    background: rgba(0, 0, 0, 0) url("../img/slider/02.jpg") no-repeat scroll center top / cover;
+}
+
+.slider-bg-03 {
+    background: rgba(0, 0, 0, 0) url("../img/slider/03.jpg") no-repeat scroll center top / cover;
+}
+
+.slider-table-cell h2 {
+    color: #fff;
+    font-size: 60px;
+}
+
+.slider-table-cell h2 span,
+.slider-table-cell h3 span {
+    color: #FB5B21;
+}
+
+.slider-table-cell h3 {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0 0;
+}
+
+.slider-content .owl-nav,
+.partners-brand .owl-nav {
+    display: none;
+}
+
+.slider-content .owl-dot {
+    background-color: #FB5B21;
+    border-radius: 50%;
+    height: 15px;
+    margin: 0 0 10px;
+    position: relative;
+    width: 15px;
+}
+
+.slider-content .owl-dots {
+    top: 50%;
+    -webkit-transform: translate(0px, -50%);
+    -ms-transform: translate(0px, -50%);
+    transform: translate(0px, -50%);
+    position: absolute;
+    right: 10%;
+    text-align: center;
+}
+
+.owl-dot.active > span {
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+    height: 7px;
+    position: absolute;
+    width: 7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.slider-extra {
+    background-color: #fff;
+    padding: 35px 15px;
+}
+
+.slider-extra > p {
+    padding: 15px 0;
+}
+
+/*  ================================
+        4. About Area
+    ================================ */
+
+.about {
+    padding: 20px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.about:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+    margin-bottom: 20px;
+}
+
+.about-title i.fa {
+    color: #FB5B21;
+    font-size: 35px;
+}
+
+.about-title h2 {
+    color: #FB5B21;
+    display: inline-block;
+    margin-left: 15px;
+    font-size: 26px;
+}
+
+.sign-up-area {
+    background: #F6F6F6 url("../img/body.png") no-repeat fixed center right / contain;
+}
+
+.sign-up-left > p {
+    margin-bottom: 15px;
+}
+
+/*  ================================
+        5. Class Area
+    ================================ */
+
+.single-class {
+    margin-bottom: 30px;
+}
+
+.class-info {
+    position: relative;
+    overflow: hidden;
+}
+
+.class-info > h2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    bottom: -50px;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    color: #FB5B21;
+    font-size: 18px;
+    opacity: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.single-class:hover .class-info > h2 {
+    bottom: 0;
+    opacity: 1;
+}
+
+.class-overflow {
+    padding: 20px;
+    transition: 0.5s;
+}
+
+.single-class:hover .class-overflow {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.single-list {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.list-one {
+    width: 30%;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.list-two {
+    width: 70%;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/*  ================================
+        6. Schedule Area
+    ================================ */
+
+.class-schedule-area {
+    background: rgba(0, 0, 0, 0) url("../img/schedule-bg.jpg") no-repeat scroll center top / cover;
+    position: relative;
+    color: #fff;
+}
+
+.class-schedule-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.class-schedule-area .gym-title h2,
+.progress-area .gym-title h2 {
+    color: #fff;
+}
+
+.schedule-table-area {
+    overflow: auto;
+    position: relative;
+}
+
+.schedule-table {
+    font-size: 12px;
+    text-transform: uppercase;
+    width: 100%;
+    border: 1px solid #f5f5f5;
+}
+
+.sched-days {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border: 1px solid #fff;
+    border-top: 0;
+}
+
+.sced-time-table {
+    background-color: #1a1a1a;
+    text-align: center;
+    border: 1px solid #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sched-tit-tim {
+    background-color: #FB5B21;
+    color: #fff;
+    text-align: center;
+    padding: 20px 5px;
+    border: 1px solid #fff;
+}
+
+.sched-title {
+    display: block;
+}
+
+.sched-time {
+    display: block;
+    margin-top: 7px;
+}
+
+/*  ================================
+        7. Team Area
+    ================================ */
+
+.team-member {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.team-member img {
+    width: 100%;
+}
+
+.member-dec {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    bottom: -60px;
+    color: #1a1a1a;
+    padding: 10px 0 10px 10px;
+    position: absolute;
+    text-transform: uppercase;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+}
+
+.member-dec h4 {
+    color: #FB5B21;
+    font-size: 16px;
+}
+
+.member-dec span {
+    display: block;
+    padding: 5px 0 7px;
+}
+
+.member-dec i.fa {
+    border: 1px solid #1a1a1a;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #1a1a1a;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    width: 25px;
+}
+
+.member-dec i.fa:hover {
+    border-color: #FB5B21;
+    color: #fff;
+    background-color: #FB5B21;
+}
+
+.team-member:hover .member-dec {
+    bottom: 0;
+}
+
+/*  ================================
+        8. Video Area
+    ================================ */
+
+.video-area {
+    background: rgba(0, 0, 0, 0) url("../img/video-bg.jpg") no-repeat scroll center top / cover;
+    position: relative;
+    color: #fff;
+}
+
+.video-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.video-btn {
+    background-color: #FB5B21;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    width: 80px;
+    z-index: 2;
+}
+
+a.video-btn i.fa {
+    color: #fff;
+    font-size: 40px;
+    left: 55%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.video-btn.hvr-ripple-out::before {
+    border-color: #FB5B21;
+    border-radius: 50%;
+}
+
+.single-video h2 {
+    color: #fff;
+    font-size: 35px;
+    margin: 20px 0 15px;
+}
+
+/*  ================================
+        9. Gallery Area
+    ================================ */
+
+.iso-nav {
+    display: block;
+    margin-bottom: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.iso-nav ul {
+    display: inline-block;
+}
+
+.iso-nav li {
+    background-color: #FB5B21;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    font-weight: 700;
+    list-style: outside none none;
+    margin: 0 3px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+.single-project {
+    box-sizing: border-box;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+}
+
+.single-project::before {
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transform: scale(0);
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    width: 100%;
+    z-index: 9;
+    content: "";
+}
+
+.project-lightbox {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.project-lightbox-middile {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.project-lightbox-middile a i.fa {
+    color: #fff;
+    background-color: #FB5B21;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transition: all 1s ease 0s;
+    -moz-transition: all 1s ease 0s;
+    transition: all 1s ease 0s;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.single-project:hover.single-project::before {
+    transform: scale(1.5);
+}
+
+.single-project:hover .project-lightbox a i.fa {
+    opacity: 1;
+}
+
+.gallery-active {
+    background-color: #1a1a1a !important;
+}
+
+/*  ================================
+        10. Progress Area
+    ================================ */
+
+.progress-area {
+    background: #050404 url("../img/slider/02.jpg") no-repeat scroll center center / cover;
+    position: relative;
+    color: #fff;
+}
+
+.progress-area::before {
+    background-color: rgba(0, 0, 0, .5);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.single-progress-dec {
+    color: #fff;
+}
+
+.single-progress-dec img {
+    width: 50px;
+    height: 40px;
+}
+
+.count-progress {
+    width: 100%;
+    margin: 5px 0;
+}
+
+.count-progress > span {
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.single-progress-dec h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/*  ================================
+        11. Price Area
+    ================================ */
+
+.price-table {
+    background-color: #1a1a1a;
+    padding-bottom: 20px;
+
+
+}
+
+.price-info {
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    text-align: right;
+}
+
+.price-info::before {
+    border-bottom: 1px solid #FB5B21;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: "";
+    width: 92%;
+}
+
+.price-info h4 {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    float: left;
+}
+
+.price-info sub {
+    color: #fff;
+}
+
+.price-table-container {
+    padding: 20px 30px 0;
+}
+
+.price-table-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.price-table-container ul li {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.price-table-container ul li:last-child {
+    padding-bottom: 0;
+}
+
+/*  ================================
+        12. Newsletter Area
+    ================================ */
+
+.newsletter-area {
+    background: rgba(0, 0, 0, 0) url("../img/client-bg.jpg") no-repeat scroll center top / cover;
+    position: relative;
+}
+
+.newsletter-area::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.newsletter-form h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.newsletter-form h2 span {
+    color: #FB5B21;
+}
+
+.newsletter-form p {
+    padding: 20px 0 30px;
+    color: #fff;
+    margin: 0;
+}
+
+.newsletter-form {
+    padding: 44px 0;
+}
+
+.formnewsletter {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.formnewsletter input.form-control {
+    height: 38px !important;
+    width: 90%;
+    border-radius: 30px;
+}
+
+.formnewsletter button {
+    background: #FB5B21 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: bold;
+    height: 38px;
+    line-height: 38px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    width: 150px;
+    border: 0;
+    border-radius: 30px;
+}
+
+.formnewsletter button.hvr-shutter-out-horizontal::before {
+    border-radius: 30px;
+}
+
+.form-control:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+/*  ================================
+        13. Client Area
+    ================================ */
+
+.client-area {
+    background-color: #F2F2F2;
+}
+
+.single-client img {
+    width: 10% !important;
+    display: inline-block !important;
+    border-radius: 100%;
+}
+
+.single-client p {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.single-client p::before {
+    content: "";
+    font-family: fontawesome;
+    margin-right: 10px;
+    color: #bdbdbd;
+}
+
+.single-client p::after {
+    content: "";
+    font-family: fontawesome;
+    margin-left: 10px;
+    color: #bdbdbd;
+}
+
+.single-client h3 {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.feedback {
+    margin-bottom: 20px;
+}
+
+.feedback i.fa {
+    color: #F2B827;
+}
+
+.single-client span {
+    font-size: 12px;
+}
+
+.client-wraper .owl-dots {
+    margin: 16px auto;
+    text-align: center;
+    width: 10%;
+    margin-bottom: 0;
+}
+
+.client-wraper .owl-dot {
+    background-color: #FB5B21;
+    border-radius: 50%;
+    display: inline-block;
+    height: 15px;
+    margin: 0 2px;
+    width: 15px;
+}
+
+.client-wraper .owl-dot.active {
+    background-color: #fff;
+    border: 4px solid #FB5B21;
+}
+
+/*  ================================
+        14. Contact Area
+    ================================ */
+
+.contact-area {
+    background: rgba(0, 0, 0, 0) url("../img/contact-bg.jpg") no-repeat scroll center top / cover;
+    position: relative;
+    color: #fff;
+}
+
+.contact-area::before {
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+}
+
+.contact-area .gym-title h2 {
+    color: #fff;
+}
+
+.contact-title h2 {
+    color: #fff;
+}
+
+.contact-logo {
+    text-align: center;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.form-content input {
+    border: 1px solid #FB5B21;
+    background-color: transparent;
+    color: #fff;
+    height: 50px;
+    padding-left: 10px;
+    width: 100%;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+textarea {
+    background-color: transparent;
+    border: 1px solid #FB5B21;
+    color: #fff;
+    height: 200px;
+    margin-bottom: 20px;
+    outline: medium none;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+}
+
+.sent-button {
+    background-color: #FB5B21;
+    border: 1px solid #FB5B21;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 5px 30px;
+}
+
+/*  ================================
+        15. Map Area
+    ================================ */
+
+.google-map-area {
+    overflow: hidden;
+}
+
+.gmap3 {
+    height: 500px;
+}
+
+#map {
+    float: left;
+    width: 50%;
+}
+
+#street {
+    float: right;
+    width: 50%;
+}
+
+/*  ================================
+        16. Contact info Area
+    ================================ */
+
+.contact-info-area {
+    padding: 40px 0;
+}
+
+.contact {
+    border-right: 2px solid #777;
+}
+
+.contact.address {
+    border-right: 0;
+}
+
+.contact i.fa {
+    font-size: 36px;
+    color: #FB5B21;
+    margin-bottom: 10px;
+}
+
+.contact a {
+    display: block;
+}
+
+.contact a:hover {
+    color: #666;
+}
+
+.contact p {
+    margin: 0;
+}
+
+/*  ================================
+        17. Footer info Area
+    ================================ */
+
+.footer-top-area {
+    background-color: #121212;
+}
+
+.footer-top {
+    overflow: hidden;
+}
+
+.footer-text img {
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 165px;
+}
+
+.footer-text p {
+    color: #fff;
+    font-weight: 300;
+}
+
+.footer-heading {
+    overflow: hidden;
+}
+
+.footer-heading h2::after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+.footer-heading h2 {
+    color: #FB5B21;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    padding: 0 0 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+address {
+    margin-bottom: 0;
+}
+
+.footer-heading address ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-recent-post.footer-heading ul li {
+    color: #fff;
+    display: block;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.footer-recent-post.footer-heading ul li:first-child {
+    padding-top: 0;
+}
+
+.footer-recent-post.footer-heading ul li:last-child {
+    padding-bottom: 0;
+}
+
+.footer-heading address ul li i.fa {
+    color: #FB5B21;
+    font-size: 16px;
+    left: 0;
+    position: absolute;
+}
+
+.footer-recent-post.footer-heading a {
+    color: #fff;
+}
+
+.footer-recent-post.footer-heading a:hover {
+    color: #FB5B21;
+}
+
+.recent-area {
+    background-color: #e6e7e8;
+    box-sizing: border-box;
+    float: left;
+    height: auto;
+    margin: 5px;
+    position: relative;
+    transition: all 1s ease 0s;
+    width: 77px;
+}
+
+.recent-area img {
+    width: 100%;
+}
+
+.footer-overflow {
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: 1s;
+    background-color: #FB5B21;
+}
+
+.recent-area:hover .footer-overflow {
+    opacity: 0.8;
+}
+
+.footer-social-about a p {
+    color: #fff;
+}
+
+.footer-social-about a p:hover {
+    opacity: 0.8;
+}
+
+.footer-social-about span {
+    color: #FB5B21;
+}
+
+.footer-social-about span:last-child {
+    display: block;
+}
+
+.sub {
+    float: left;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+.sub input {
+    color: #fff;
+    height: 34px;
+    width: 75%;
+    background-color: #FB5B21;
+    border: 0;
+    padding-left: 15px;
+    outline: none;
+    float: left;
+}
+
+.sub button {
+    background-color: #FB5B21;
+    border: 0 none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 25px;
+    height: 35px;
+    width: 18%;
+    float: right;
+}
+
+.sub button i.fa {
+    position: absolute;
+    left: 30%;
+    top: -5px;
+}
+
+.fotter-bottom-area {
+    background-color: #000;
+    position: relative;
+}
+
+.reserve-area {
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 20px 0;
+}
+
+.reserve-area a {
+    color: #FB5B21;
+}
+
+.social-link {
+    padding: 16px 0;
+}
+
+.social-link a i {
+    background-color: #FB5B21;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    transition: all 1s ease 0s;
+    width: 30px;
+}
+
+.social-link a i:hover {
+    background-color: #fff;
+    color: #FB5B21;
+}
